@@ -1,8 +1,12 @@
 package com.example.demo.controller;
 
+import com.example.demo.entity.TestMessage;
+import com.example.demo.service.TestMessageService;
+
+import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.example.demo.service.TestMessageService;
+
 @RestController
 public class HelloController {
     private final TestMessageService service;
