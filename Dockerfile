@@ -19,8 +19,8 @@ WORKDIR /app
 # Copy jar from build stage
 COPY --from=build /app/target/demo-0.0.1-SNAPSHOT.jar app.jar
 
-# Expose port (Render default port is 10000+, but Spring Boot default 8080)
+# Expose port
 EXPOSE 8080
 
 # Run the jar
-ENTRYPOINT ["java","-jar","app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]

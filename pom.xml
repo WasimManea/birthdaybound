@@ -9,8 +9,8 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>hello-world</name>
-    <description>Hello World Spring Boot</description>
+    <name>springboot-neon-demo</name>
+    <description>Spring Boot + Neon Postgres Demo</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -24,13 +24,13 @@
     </properties>
 
     <dependencies>
-        <!-- Web -->
+        <!-- Spring Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- JPA -->
+        <!-- Spring Data JPA -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -43,7 +43,7 @@
             <version>42.6.0</version>
         </dependency>
 
-        <!-- Test -->
+        <!-- Testing -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -53,7 +53,6 @@
 
     <build>
         <plugins>
-            <!-- Spring Boot plugin -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
