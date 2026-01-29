@@ -12,12 +12,15 @@ public class TestMessage {
     private Integer rowKey;
 
     private String message;
+    private String email;
 
-    public TestMessage() {}
+    public TestMessage() {
+    }
 
-    public TestMessage(Integer rowKey, String message) {
+    public TestMessage(Integer rowKey, String message, String email) {
         this.rowKey = rowKey;
         this.message = message;
+        this.email = email;
     }
 
     public Integer getRowKey() {
@@ -34,5 +37,13 @@ public class TestMessage {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

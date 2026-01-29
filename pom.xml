@@ -24,6 +24,7 @@
     </properties>
 
     <dependencies>
+
         <!-- Spring Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -43,12 +44,19 @@
             <version>42.6.0</version>
         </dependency>
 
+        <!-- ✅ Email support -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+
         <!-- Testing -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <build>
@@ -59,4 +67,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
